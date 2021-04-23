@@ -1,0 +1,119 @@
+
+.content{
+  margin: 20px 20% 0 20%;
+}
+
+section{
+  background-image: linear-gradient(white, rgb(92, 160, 206));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 10px 0;
+  height: 100%;
+}
+
+figure{
+  text-align: center;
+}
+
+section img{
+  transition: all 0.5s ease-in-out; /* speed of transition to magnification */
+  width: 450px;
+  height: auto;
+}
+
+section img:hover{
+  transform: scale(1.025); /* Magnifies image */
+}
+
+/* Colums */
+* {
+  box-sizing: border-box;
+}
+
+/* Rounded corners - w3schools */
+
+.rcorners1 {
+border-radius: 25px;
+border: 2px solid #2F2FA2;
+font-size: 14px;
+padding: 10px;
+color: black;
+}
+
+/* COLUMNS */
+/* row1 */
+/* image */
+.column {
+float: center;
+padding-top: 10px;
+}
+
+/* text 1 */
+.column2 {
+float: left;
+width: auto;
+margin-top: 25px;
+margin-bottom: 5px;
+margin-left: 5px;
+margin-right: 5px;
+height: 30%;
+color: black;
+}
+
+/* row2 */
+/* image */
+.column3 {
+float: center;
+padding-top: 10px;
+}
+
+/* text2 */
+.column4 {
+float: right;
+width: auto;
+margin-top: 25px;
+margin-bottom: 15px;
+margin-left: 5px;
+margin-right: 5px;
+height: 30%;
+color: black;
+}
+
+.indent {
+margin-left: 1%;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+.image {
+  border: 0px solid #8860D0;
+  border-radius: 50px;
+}
+
+/* FOOTER START */
+footer {
+  position: sticky;
+  font-size: 15px;
+  text-align: right;
+  padding: 5px 10px 10px 0;
+  background-color: #F3F3F3;
+  color: black;
+  bottom: 0px;
+  height: 50px;
+}
+
+footer a{
+  color:black
+}
+footer a:hover{
+  color: #A09E9E;
+}
+/* FOOTER END*/
+
+p {
+  font-weight: bold;
+}

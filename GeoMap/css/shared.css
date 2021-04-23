@@ -1,0 +1,86 @@
+body{
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  text-align: center;
+  background-color: rgb(51, 153, 255);
+}
+
+/* START OF HEADER */
+header{
+  text-align: center;
+  background-color: white;
+  position: sticky;
+}
+
+header a, h1{
+  font-size: 50px;
+  font-family: Righteous, sans-serif;
+  color: blue;
+  text-decoration: none;
+  margin: 0;
+  position: sticky;
+}
+
+header img{
+  height: 65px;
+  width:  90px;
+}
+/*END OF HEADER */
+
+/* START OF NAV BAR */
+nav{
+  position: sticky; /* makes nav bar always viewable */
+  top: 0; 
+  z-index: 999; /*  stack order of nav bar - always shows over other elements */
+}
+
+nav ul {
+  font-family: Staatliches;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 100px;
+  overflow: hidden;
+  background-color: #2F2FA2;
+}
+
+nav li {
+  display: inline;
+  margin: 0 3%;
+}
+
+nav li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+li.dropdown {
+  display: inline-block; /* Dropdown menu */
+}
+
+/* END OF NAV BAR*/
+
+/* SECTIONS START*/
+p {
+  padding: 2px 10px;
+}
+
+section p{
+  font-family: 'Montserrat', sans-serif;
+  /* color: black; */
+}
+
+h2, h3, h4, h5, h6{ /* styling for headings across pages */
+  font-family: Righteous;
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+  padding-top: 5px;
+  color: black;
+}
+
+/* SECTIONS END */

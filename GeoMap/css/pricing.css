@@ -1,0 +1,212 @@
+
+* .content
+{
+    margin: 20px 20% 0 20%;
+}
+
+.row {
+    max-width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+section {
+    /* padding: 10px 0; */
+    background-image: linear-gradient(white, rgb(92, 160, 206));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+hr{
+    width: 50%;
+}
+
+nav{
+    position: sticky; /* makes nav bar always viewable */
+    top: 0; 
+    z-index: 999; /*  stack order of nav bar - always shows over other elements */
+  }
+
+  nav ul {
+    font-family: Staatliches;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 100px;
+    overflow: hidden;
+    background-color: #2F2FA2;
+  }
+  
+  nav li {
+    display: inline;
+    margin: 0 3%;
+  }
+  
+  nav li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li.dropdown {
+    display: inline-block; /* Dropdown menu */
+  }
+  
+
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #2980b9;
+    font-size: 120%;
+
+    line-height: 100%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.5s, border 0.5s, color 0.5s;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: #2980b9;
+    border: 1px solid #2980b9;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #2980b9;
+    color: #2980b9;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #2d6e99;
+    cursor: pointer;
+}
+
+.btn-full:hover,
+.btn-full:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    border: 1px solid #2980b9;
+    cursor: pointer;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #2980b9;
+    color: #fff;
+}
+
+.plan-box {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.plan-box div {
+    padding: 10px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+.plan-box div:first-child {
+    background-color: rgb(252, 252, 252);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border: 0;
+}
+
+.plan-price {
+    font-size: 200%;
+    margin-bottom: 10px;
+    font-weight: normal;
+    color: black;     
+}
+
+.plan-price span {
+    font-size: 70%;
+    font-weight: 300;
+}
+
+.plan-price-sub {
+    font-size: 100%;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box ul li {
+    padding: 5px 0;
+    font-size: 100%;
+}
+
+ footer {
+    position: sticky;
+    font-size: 15px;
+    text-align: right;
+    padding: 5px 10px 10px 0;
+    background-color: #F3F3F3;
+    color: black;
+    bottom: 0px;
+    height: 35px;
+    font-weight: bold;
+  }
+
+  footer a{
+    color:black
+  }
+  footer a:hover{
+    color: #A09E9E;
+  }
+
+/*  SECTIONS */
+
+/*  GROUPING  */
+
+
+/*  GRID COLUMN SETUP */
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
+@media only screen and (max-width: 1010px) {
+	.col { 
+		/*margin: 1% 0 1% 0%;*/
+        margin: 0;
+	}
+}
+
+.span-1-of-4 {
+	width: 23.8%;
+	min-width: 235px;
+}
